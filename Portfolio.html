@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Harshit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="Portfolio.html">Home</a></li>
+                    <li><a href="#secondsection">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="#footer">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firstsection" class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Harshit Vatsa</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="dev.png.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="secondsection" class="secondsection">
+            <div class="rightsection"><img src="Profile (2).jpg" alt="" class="proflie-img"></div>
+            <div class="leftsection"><span class="text-gray">What I have done so far</span>
+            <div class="about"><span><p>I am currently pursuing a B.Tech in Computer Science and Business Systems (CSBS) from TINT. Over the course of my studies, I have gained skills in web development, programming, and software engineering.</p></span></div></div>
+            <div class="box"></div>
+        </section>
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Skills</h2>
+            
+            <div class="skills-category">
+                <h3>Front-end</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="javascript-icon.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="html-icon.png" alt="HTML5">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="css-icon.png" alt="CSS3">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="bootstrap-icon.jpeg" alt="Bootstrap">
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="skills-category">
+                <h3>Back-end</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="sql-icon.png" alt="SQL">
+                        <p>SQL</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="skills-category">
+                <h3>Other</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="java-icon.png" alt="Java">
+                        <p>Java</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer','Programmer','Photographer'],
+          typeSpeed: 50,
+          loop: true,
+        });
+      </script>
+      <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Harshit Vatsa</h3>
+                <p></p>
+                <div class="social-icons">
+                    <a href="https://github.com/HarshitVatsa-7"><i class="fa-brands fa-github"></i></a>
+                    <a class=linkedin href="https://www.linkedin.com/in/harshit-vatsa-354230283/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/harshit.vatsa/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="mailto:harshitvatsa284@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/harshit-vatsa-354230283/">Linkedin</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Sitemap</h4>
+            <ul>
+                <li><a href="#firstsection">Home</a></li>
+                <li><a href="#secondsection">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#footer">Contact Me</a></li>
+            </ul>
+        </div>
+        <!-- <div class="footer-column">
+            <h4>Stay up to date</h4>
+            <p>Follow me on my social media handles and on linkdin to stay up to date with my projects, new achievments, and more!</p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="First name" name="first_name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <button type="submit">Sign me up</button>
+            </form>
+        </div> -->
+        </div>
+      </footer>
+</body>
+</html>

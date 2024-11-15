@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            padding: 0 20px;
+            background-color: rgb(18, 18, 62);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        /* Main Section Styling */
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 60px auto;
+        }
+
+        .leftsection {
+            flex: 1;
+            margin-right: 30px;
+            font-size: 1.1rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .rightsection img:hover {
+            transform: scale(1.05) ;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .leftsection {
+                margin: 0 0 20px 0;
+            }
+
+            .rightsection img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <h2 class="project-title">Projects</h2>
+            <ul>
+                <li><a href="Portfolio.html">Home</a></li>
+                <li><a href="Portfolio.html#secondsection">About</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                This project is a personal photography portfolio webpage created using HTML and CSS. It features a visually engaging and user-friendly layout that allows visitors to browse through a curated selection of my photography work. The design is minimalist to keep the focus on the images, with subtle animations and transitions for a smooth user experience.
+            </div>
+            <div class="rightsection">
+                <a href="Photography Portfolio/minorproj.html">
+                    <img src="Photography Portfolio/photo.jpg" alt="Photography Portfolio">
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
